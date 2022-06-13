@@ -19,12 +19,12 @@ const HomeHeader = ({onSearch}: {onSearch: any}) => {
         <View style={{width: 45, height: 45}}>
           <Image
             source={assets.person01}
-            resizeMethod="contain"
+            resizeMode="contain"
             style={{width: '100%', height: '100%'}}
           />
           <Image
             source={assets.badge}
-            resizeMethod="contain"
+            resizeMode="contain"
             style={{
               position: 'absolute',
               width: 15,
