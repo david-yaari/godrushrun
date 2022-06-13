@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* goldrushrunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* goldrushrunTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-goldrushrun.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-goldrushrun.a */; };
+		11A2A74210934FCDA344A804 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C4A8DF838E4DC09EB4521D /* Inter-SemiBold.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		59D31412BC384B33A533D266 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 832836A640A94A2BB252B593 /* Inter-Regular.ttf */; };
+		6F3073B9D03F48D9A366D74D /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D16BE09651664B24B2CE8B58 /* Inter-Bold.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-goldrushrun-goldrushrunTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-goldrushrun-goldrushrunTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		F38F82BE8CAD4FB48518454A /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 792BF369708C4596BCA534B4 /* Inter-Light.ttf */; };
+		F45F0D86A25B4C7EA08DF351 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D2D2D4BB08244E9CA4D1A4E8 /* Inter-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +35,7 @@
 		00E356EE1AD99517003FC87E /* goldrushrunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goldrushrunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* goldrushrunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = goldrushrunTests.m; sourceTree = "<group>"; };
+		03C4A8DF838E4DC09EB4521D /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-SemiBold.ttf"; path = "../assets/fonts/Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* goldrushrun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goldrushrun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = goldrushrun/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = goldrushrun/AppDelegate.mm; sourceTree = "<group>"; };
@@ -37,13 +43,22 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = goldrushrun/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = goldrushrun/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-goldrushrun-goldrushrunTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-goldrushrun-goldrushrunTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C6BD815CB9744B78A810FC6 /* Inter-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Light.ttf"; path = "../src/assets/fonts/Inter-Light.ttf"; sourceTree = "<group>"; };
+		254BAEC17E0B4315872873C5 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-SemiBold.ttf"; path = "../src/assets/fonts/Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-goldrushrun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goldrushrun.debug.xcconfig"; path = "Target Support Files/Pods-goldrushrun/Pods-goldrushrun.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-goldrushrun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goldrushrun.release.xcconfig"; path = "Target Support Files/Pods-goldrushrun/Pods-goldrushrun.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-goldrushrun-goldrushrunTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goldrushrun-goldrushrunTests.debug.xcconfig"; path = "Target Support Files/Pods-goldrushrun-goldrushrunTests/Pods-goldrushrun-goldrushrunTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-goldrushrun.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-goldrushrun.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		792BF369708C4596BCA534B4 /* Inter-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Light.ttf"; path = "../assets/fonts/Inter-Light.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = goldrushrun/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		832836A640A94A2BB252B593 /* Inter-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Regular.ttf"; path = "../assets/fonts/Inter-Regular.ttf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-goldrushrun-goldrushrunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-goldrushrun-goldrushrunTests.release.xcconfig"; path = "Target Support Files/Pods-goldrushrun-goldrushrunTests/Pods-goldrushrun-goldrushrunTests.release.xcconfig"; sourceTree = "<group>"; };
+		CFB6C1006E2A4599A87F523F /* Inter-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Bold.ttf"; path = "../src/assets/fonts/Inter-Bold.ttf"; sourceTree = "<group>"; };
+		D16BE09651664B24B2CE8B58 /* Inter-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Bold.ttf"; path = "../assets/fonts/Inter-Bold.ttf"; sourceTree = "<group>"; };
+		D2D2D4BB08244E9CA4D1A4E8 /* Inter-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Medium.ttf"; path = "../assets/fonts/Inter-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F0013FBDF6BC482A8748F727 /* Inter-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Medium.ttf"; path = "../src/assets/fonts/Inter-Medium.ttf"; sourceTree = "<group>"; };
+		F210DA05263047F692484F8E /* Inter-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Regular.ttf"; path = "../src/assets/fonts/Inter-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +137,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				BDD29E3D48784B71A5D06821 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -146,6 +162,23 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-goldrushrun-goldrushrunTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BDD29E3D48784B71A5D06821 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D16BE09651664B24B2CE8B58 /* Inter-Bold.ttf */,
+				792BF369708C4596BCA534B4 /* Inter-Light.ttf */,
+				D2D2D4BB08244E9CA4D1A4E8 /* Inter-Medium.ttf */,
+				832836A640A94A2BB252B593 /* Inter-Regular.ttf */,
+				03C4A8DF838E4DC09EB4521D /* Inter-SemiBold.ttf */,
+				CFB6C1006E2A4599A87F523F /* Inter-Bold.ttf */,
+				1C6BD815CB9744B78A810FC6 /* Inter-Light.ttf */,
+				F0013FBDF6BC482A8748F727 /* Inter-Medium.ttf */,
+				F210DA05263047F692484F8E /* Inter-Regular.ttf */,
+				254BAEC17E0B4315872873C5 /* Inter-SemiBold.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +277,11 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				6F3073B9D03F48D9A366D74D /* Inter-Bold.ttf in Resources */,
+				F38F82BE8CAD4FB48518454A /* Inter-Light.ttf in Resources */,
+				F45F0D86A25B4C7EA08DF351 /* Inter-Medium.ttf in Resources */,
+				59D31412BC384B33A533D266 /* Inter-Regular.ttf in Resources */,
+				11A2A74210934FCDA344A804 /* Inter-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,8 @@ npx react-native init goldrushrun --template react-native-template-typescript
 npm install @react-navigation/native
 npm install @react-navigation/native-stack
 npm install react-native-screens react-native-safe-area-context
+
+npm install @react-navigation/bottom-tabs
 `
 `
 npm start --reset-cache
@@ -22,3 +24,9 @@ npx pod-install
 
 ## add firebase (select web), add constants (there is a problem with the latest version)
 npm install firebase@9.6.1
+
+## added asset directories and link fonts to project
+
+`
+npx react-native link
+`

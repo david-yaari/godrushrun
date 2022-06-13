@@ -18,7 +18,7 @@ const theme = {
   },
 };
 
-const MainNav: FC = () => {
+export default function MainNav() {
   const [user, setUser] = useState<any>(null);
 
   const bootstrap = () => {
@@ -38,6 +38,4 @@ const MainNav: FC = () => {
       {user == null ? <AppStack /> : <AuthStack />}
     </NavigationContainer>
   );
-};
-
-export default MainNav;
+}
