@@ -525,6 +525,7 @@
 				DEVELOPMENT_TEAM = XWYKC38V4T;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = goldrushrun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -551,6 +552,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XWYKC38V4T;
 				INFOPLIST_FILE = goldrushrun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

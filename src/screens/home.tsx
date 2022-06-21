@@ -1,15 +1,16 @@
-import React, {useState} from 'react';
-import {View, SafeAreaView, FlatList} from 'react-native';
+import firebase from 'firebase/compat';
+import React, {useEffect, useState} from 'react';
+import {View, SafeAreaView, FlatList, Alert} from 'react-native';
 
-import {NFTCard, HomeHeader, FocusedStatusBar} from '../components';
-import {COLORS, NFTData} from '../constants';
+import {NFTCard, HomeHeader, FocusedStatusBar, RectButton} from '../components';
+import {COLORS, NFTData, SIZES} from '../constants';
 
 const Home = () => {
-  const [nftData, setNftData] = useState(NFTData);
+  const [nftData, setNftData] = useState<any>(null);
 
-  const handleSearch = (value) => {
+  const handleSearch = value => {
     if (value.length === 0) {
-      setNftData(NFTData);
+      //setNftData(NFTData);
     }
 
     const filteredData = NFTData.filter(item =>
@@ -23,14 +24,51 @@ const Home = () => {
     }
   };
 
+  const signOut = () => {
+    firebase.auth().signOut();
+  };
+
+  const post = async () => {
+    try {
+      for (var _i = 0; _i < 8; _i++){
+      await firebase.firestore().collection('NFTData').add(NFTData[_i]);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const fetchNFTData = async () => {
+    const nftData = await firebase.firestore().collection('NFTData').get();
+    setNftData([...nftData.docs]);
+  };
+
+  useEffect(() => {
+    fetchNFTData();
+  }, []);
+
   return (
     <SafeAreaView style={{flex: 1}}>
       <FocusedStatusBar backgroundColor={COLORS.primary} />
+      <View>
+        <RectButton
+          title="Sign Out"
+          buttonStyle={{borderRadius: SIZES.small}}
+          labelStyle={{fontSize: SIZES.font}}
+          onPress={signOut}
+        />
+        <RectButton
+          title="Load Data"
+          buttonStyle={{borderRadius: SIZES.small}}
+          labelStyle={{fontSize: SIZES.font}}
+          onPress={post}
+        />
+      </View>
       <View style={{flex: 1}}>
         <View style={{zIndex: 0}}>
           <FlatList
             data={nftData}
-            renderItem={({item}) => <NFTCard data={item} />}
+            renderItem={({item}) => <NFTCard data={item.data()} />}
             keyExtractor={item => item.id}
             showsVerticalScrollIndicator={false}
             ListHeaderComponent={<HomeHeader onSearch={handleSearch} />}

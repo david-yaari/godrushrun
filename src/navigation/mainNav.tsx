@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import firebase from 'firebase/compat/app';
@@ -35,7 +35,7 @@ export default function MainNav() {
 
   return (
     <NavigationContainer theme={theme}>
-      {user == null ? <AppStack /> : <AuthStack />}
+      {user !== null ? <AppStack /> : <AuthStack />}
     </NavigationContainer>
   );
 }

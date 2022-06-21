@@ -4,9 +4,12 @@ export const COLORS = {
 
   white: '#FFF',
   gray: '#74858C',
+  gainsboro: '#e3e3e3',
+  blue: '#0000EE',
 };
 
 export const SIZES = {
+  extraSmall: 5,
   base: 8,
   small: 12,
   font: 14,

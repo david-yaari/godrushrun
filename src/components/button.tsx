@@ -1,5 +1,15 @@
-import {View, Text, Touchable, TouchableOpacity, Image} from 'react-native';
-import React from 'react';
+import {
+  View,
+  Text,
+  Touchable,
+  TouchableOpacity,
+  Image,
+  ViewStyle,
+  TextStyle,
+  StyleSheet,
+  StyleProp,
+} from 'react-native';
+import React, {FC} from 'react';
 import {COLORS, FONTS, SHADOWS, SIZES} from '../constants';
 
 export const CircleButton = ({imgUrl, handlePress, ...props}) => {
@@ -26,26 +36,37 @@ export const CircleButton = ({imgUrl, handlePress, ...props}) => {
   );
 };
 
-export const RectButton = ({minWidth, fontSize, handlePress, ...props}) => {
+interface Props {
+  title: string;
+  buttonStyle?: StyleProp<ViewStyle>;
+  labelStyle?: StyleProp<TextStyle>;
+  onPress: () => void;
+}
+
+interface Styles {
+  button: ViewStyle;
+  label: TextStyle;
+}
+
+const styles = StyleSheet.create<Styles>({
+  button: {
+    backgroundColor: COLORS.primary,
+    padding: SIZES.small,
+    marginVertical: SIZES.small,
+    paddingHorizontal: SIZES.extraLarge,
+  },
+  label: {
+    fontFamily: FONTS.semiBold,
+    color: COLORS.white,
+    textAlign: 'center',
+  },
+});
+export const RectButton: FC<Props> = ({title, onPress, ...props}: Props) => {
   return (
     <TouchableOpacity
-      style={{
-        backgroundColor: COLORS.primary,
-        padding: SIZES.small,
-        borderRadius: SIZES.extraLarge,
-        minWidth: minWidth,
-        ...props,
-      }}
-      onPress={handlePress}>
-      <Text
-        style={{
-          fontFamily: FONTS.semiBold,
-          fontSize: fontSize,
-          color: COLORS.white,
-          textAlign: 'center',
-        }}>
-        Place a bid
-      </Text>
+      style={[styles.button, props.buttonStyle]}
+      onPress={onPress}>
+      <Text style={[styles.label, props.labelStyle]}>{title}</Text>
     </TouchableOpacity>
   );
 };

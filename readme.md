@@ -30,3 +30,5 @@ npm install firebase@9.6.1
 `
 npx react-native link
 `
+
+yarn add @react-native-firebase/storage
